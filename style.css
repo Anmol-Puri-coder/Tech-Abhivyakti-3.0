@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600; 700; 800; 900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: rgb(21,21,21);
+    color: #fff;
+    }
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(30, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    }
+    .logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+    }
+    .search-container{
+        margin-left: 4rem;
+    }
+    .search-container input{
+        padding: 4px;
+        border-radius: 20px;
+        border: solid 1px black;
+        width: 59%;
+
+    }
+    .search-container input:hover{
+        background-color: rgba(254, 253, 253, 0.649);
+    }
+    #searchInput{
+        padding-left: 2vw;
+        
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .navbar a{
+        font-size: 18px;
+        color: #fff;
+        padding-left: 3vw;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .navbar a:hover {
+            color: rgb(255,8,21);
+    }
+    .navbar a.active{
+       color: hsla(160, 3%, 18%, 0.627);
+    }
+    
+    .home {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .home-content {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+        .home-content h1 {
+        font-size: 78px;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+        .home-content p {
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+            margin-bottom: 30px;
+            }
+            .home-content .start-btn {
+            width: 190px;
+            height: 55px;
+            margin:0 auto;
+            margin-top: 35px;
+            background: #c40094;
+            border: 2px solid #fff;
+            outline: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #c40094;
+            font-size: 18px;
+            color: #fff;
+            letter-spacing: 1px;
+            font-weight: 600;
+            cursor: pointer;
+            }
+            .mybtn{
+                display: flex;
+                justify-content: center;
+            }
+            .home-content .start-btn a:visited{
+                text-decoration: none;
+                color: #fff;
+            }
+            .home-content .start-btn a:active{
+                text-decoration: none;
+                color: #fff;
+            }
+            .home-content .start-btn:hover{
+                text-decoration: none;
+                background:#8f106f;
+            }
+            .Quiz_Selector1{
+                margin:auto;
+                margin-top: 8rem;
+                justify-content: center;
+                gap: 3rem;
+                display: flex;
+                width: min-content;
+                height: min-content;
+            }
+            .Quiz_Selector2{
+                margin: auto;
+                margin-top: -3rem;
+                margin-bottom: 4rem ;
+                justify-content: center;
+                gap: 3rem;
+                display: flex;
+                width: min-content;
+                height: min-content;
+            }
+            .quiz_subdiv{
+                
+                border: 4px wheat;
+                height: 40vh;
+                width: 40vw;
+                padding: 1rem;
+                background-color: #c40094;
+                border-radius: 20px;
+            }
+           
+            .quiz-name{ 
+                text-align: center;
+                font-size: 2rem;
+                background: rgb(19,19,19);
+                height: 7vh;
+                width:25vw;
+                margin: 3vh;
+                border-radius:2rem;
+            }
+            .quiz_subdiv{
+               
+                justify-content: center;
+            }
+            
+           .quiz-name-textG{
+            color: rgb(0,195,160) ;
+            font-size: 2rem;
+           }
+           .quiz-name-textP{
+            color: rgb(164,87,255) ;
+            font-size: 2rem;
+           }
+           .quiz-name-textR{
+            color: rgb(255,77,0) ;
+            font-size: 2rem;
+           }
+           .quiz-name-textB{
+            color: #2abdff ;
+            font-size: 2rem;
+           }
+
+
+
+
+
+
+           footer{
+            background: #343434;
+            padding-top: 50px;
+        }
+        #footer{
+            width: 1140px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-content{
+            width: 33.3%;
+        }
+        h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .footer-content p{
+            width:190px;
+            margin: auto;
+            padding: 7px;
+        }
+        .footer-content ul{
+            text-align: center;
+        }
+        .list{
+            padding: 0;
+        }
+        .list li{
+            width: auto;
+            text-align: center;
+            list-style-type:none;
+            padding: 7px;
+            position: relative;
+        }
+        .list li::before{
+            content: '';
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: #f18930;
+            transition-duration: .5s;
+        }
+        .list li:hover::before{
+            width: 70px;
+        }
+        .social-icons{
+            text-align: center;
+            padding: 0;
+        }
+        .social-icons li{
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+        }
+        .social-icons i{
+            color: white;
+            font-size: 25px;
+            display: flex;
+            flex-direction:column ;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color: #f18930;
+        }
+        .social-icons i:hover{
+            color: #f18930;
+        }
+        .bottom-bar{
+            background: #f18930;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 50px;
+        }
+        .bottom-bar p{
+            color: #343434;
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
+        }
+    
+
+        .empty{
+            height: 60vh;
+            width: max-content;
+            background-color: rgb(21,21,21);
+        }

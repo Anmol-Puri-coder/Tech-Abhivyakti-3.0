@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
+  <div class="quiz_selection">
+    <h2>Your Results</h2>
+    <p id="score-display"></p>
+    <div class="final-buttons">
+      <button class="retry-btn" onclick="retryQuiz()">Retry Quiz</button>
+      <button class="home-btn" onclick="goHome()">Home</button>
+    </div>
+  </div>
+  <script>
+    // Retrieve the score and total questions from localStorage
+    const score = localStorage.getItem("score");
+    const totalQuestions = localStorage.getItem("totalQuestions");
+
+    // Display the score
+    const scoreDisplay = document.getElementById("score-display");
+    scoreDisplay.innerText = `Your score: ${score} / ${totalQuestions}`;
+
+    // Retry Quiz
+    const retryQuiz = () => {
+      window.location.href = "geography.html";
+    };
+
+    // Navigate to Home
+    const goHome = () => {
+      window.location.href = "index.html"; // Replace with your home page URL
+    };
+  </script>
+</body>
+</html>
